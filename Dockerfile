@@ -58,11 +58,7 @@ RUN \
 	libldap2-dev \
 	libsasl2-dev \
 	python3-pip && \
- apt-get -y autoremove && \
- rm -rf \
-	/tmp/* \
-	/var/lib/apt/lists/* \
-	/var/tmp/*
+ apt-get -y autoremove
     
 # add local files
 COPY root/ /
